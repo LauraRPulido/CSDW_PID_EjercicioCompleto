@@ -16,4 +16,42 @@ img{
 
 :root{
 
+    --grisOscuro: #2c3e50;
+    --turquesa: #0092d1;
+    --blanco: white;
+    --negro: black;
+
+}
+
+body{
+    font-family: "Roboto";
+}
+
+h1,h2,h3,h4,h5,h6,a.navbar-brand{
+    font-family: "Roboto Slab";
+}
+
+header#header{
+    .navTop{
+        background-color: var(--turquesa);
+        color: var(--blanco);
+        a{
+            color: var(--blanco);
+        }
+    }
+
+    .navBottom{
+        a.navbar-brand{
+            font-size: 2rem;
+            font-weight: bold;
+            span{
+                color:var(--turquesa)
+            }
+        }
+    }
+
+    a.active{
+        color: var(--turquesa );
+    }
+    
 }
