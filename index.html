@@ -15,12 +15,12 @@
 
     <header id="header">
 
-        <div class="navTop bg-info">
+        <div class="navTop">
             <div class="container">
                 <div class="row pt-3">
                     <div class="col-auto"><p>Tienes alguna pregunta?</p>
                     </div>
-                    
+                   <!-- COL AUTO PILLA LO QUE NECESITA MIENTRA COL A SECAS OCUPA TODO (COL-12) -->
                     <div class="col-auto">
                         
                         <a href="TEL:956789033" target="_blank">
@@ -47,11 +47,12 @@
 
         </div>
 
-        <div class="navBottom">
+        <!-- LO DE ROL AYUDA AL SEO Y TAMBIEN LO DE ARIA NAV. SOBRE TODO SE USA EN DIVS VACÍOS -->
+        <div class="navBottom" role="navegación principal">
 
             <nav class="navbar navbar-expand-md">
                 <div class="container">
-                  <a class="navbar-brand" href="#"><h2>E-Twink</h2></a>
+                  <a class="navbar-brand" href="#">E-<span>Web</span></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -72,18 +73,255 @@
 
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-auto">
-                <img src="./img/icon_1.png" alt="">
+    <!-- SI VAMOS A USAR CSS ES MEJOR HACER LOS JUSTIFY CONTENT Y TEXT CONTENT EN EL CSS -->
+    <section id="banner" class="container-fluid">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Cursos Online</h1>
+                    <p>html5 - CSS - JavaScript - PHP - Wordpress</p>
+                    <a href="#">Más información</a>
+                </div>
             </div>
         </div>
-    </div>
+
+    </section>
+
+    <main id="index">
+
+        <!-- MEJOR METER LAS SECTION SIN CONTAINER -->
+        <section id="bienvenida">
+
+            <div class="container">
+                <div class="row">
+                    <!-- COMO PONER QUE HAYAN DOS COLUMNAS VACÍAS ALREDEDOR DE LA COLUMNA PRINCIPAL SOLO EN MD SE USA OFFSET-MD-2 SI QUEREMOS DOS COLUMNAS. TAMBIÉN PODEMOS USAR MARGIN AUTO NORMALMENTE SE USA MARGIN AUTO-->
+                    <div class="col-md-8 mx-auto">
+                        <h2>Bienvenidos a la plataforma E-Web</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos similique minima cum impedit assumenda aut, totam voluptatem distinctio nisi voluptas, enim, eos ullam quae? Dolorem odit unde officia odio eos.</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <img src="./img/icon_1.png" alt="">
+                        <h3>Expertos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, assumenda.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img src="./img/icon_2.png" alt="">
+                        <h3>Recursos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, assumenda.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img src="./img/icon_3.png" alt="">
+                        <h3>Cursos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, assumenda.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img src="./img/icon_4.png" alt="">
+                        <h3>Premios</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, assumenda.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="cursos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2>Cursos Online</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia corporis dolorem modi! Est esse, ratione vitae excepturi incidunt, voluptates eveniet officia nemo necessitatibus inventore maxime minus sequi recusandae debitis tempora.</p>
+                    </div>
+                </div>
+                <!-- VAMOS A USAR CARD A MANO -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- EL CARD SE PONE EN UN DIV Y DENTRO TIENE QUE TENER UN DIV CON CARD-BODY Y LA IMAGEN SI SE QUIERE -->
+                        <div class="card">
+                            <img src="./img/curso1.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Ritulo</h3>
+                                <h4>Redu</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
+                                <hr>
+                                <div class="descripcion">
+                                    <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                        20 estudiantes</span>
+                                    <span>130€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./img/curso2.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Ritulo</h3>
+                                <h4>Redu</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
+                                <hr>
+                                <div class="descripcion">
+                                    <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                        20 estudiantes</span>
+                                    <span>130€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./img/curso3.jpg" alt="">
+                            <div class="card-body">
+                                <h3>Ritulo</h3>
+                                <h4>Redu</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
+                                <hr>
+                                <div class="descripcion">
+                                    <span><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                        20 estudiantes</span>
+                                    <span>130€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="">Ver todos los cursos</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="noticias">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2>Noticias</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit nemo corrupti facilis exercitationem quisquam cumque architecto nulla, laborum velit explicabo dolores voluptatibus corporis dicta incidunt? In repellendus minus obcaecati.</p>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <article class="col-md-4">
+                        <img src="./img/noticia1.jpg" class="img-fluid" alt="">
+                        <div class="info">
+                            <time datetime="2025-04-5">
+                                <span>21</span><br>
+                                <span>Feb.</span>
+                            </time>
+                            <div class="contenido">
+                                <h4>Titulo Noticia</h4>
+                                <time datetime="">15:30-19:30</time>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="./img/noticia2.jpg" class="img-fluid" alt="">
+                        <div class="info">
+                            <time datetime="2025-04-5">
+                                <span>21</span><br>
+                                <span>Feb.</span>
+                            </time>
+                            <div class="contenido">
+                                <h4>Titulo Noticia</h4>
+                                <time datetime="">15:30-19:30</time>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="./img/noticia3.jpg" class="img-fluid" alt="">
+                        <div class="info">
+                            <time datetime="2025-04-5">
+                                <span>21</span><br>
+                                <span>Feb.</span>
+                            </time>
+                            <div class="contenido">
+                                <h4>Titulo Noticia</h4>
+                                <time datetime="">15:30-19:30</time>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
+
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a href="">Suscribirse</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a href="#">E-<span>Web</span></a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi perferendis cumque ad.</p>
+                    <div class="social">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h5>Contactar</h5>
+                    <address>
+                        <ul>
+                            <li>Email: patatasalopobre@gmail.com</li>
+                            <li><a href="tel: 666666666"></a>666-666-666</li>
+                            <li>Avda. Infierno del planeta neptuno</li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col">
+                    <h5>Cursos</h5>
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li><a href=""></a>Web</li>
+                                <li><a href=""></a>Gráfico</li>
+                                <li><a href=""></a>Informática</li>
+                                <li><a href=""></a>3D</li>
+                            </ul>
+                        </div>
+                        <div class="col">   
+                            <ul>
+                                <li><a href=""></a>Interiores</li>
+                                <li><a href=""></a>Ciclos</li>
+                                <li><a href=""></a>Fotografía</li>
+                                <li><a href=""></a>Audiovisual</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <!-- Node JS permite programar en JS en la parte del servidor. Para sistema de backend. Puede hacer la función de PHP y MSQL en un solo servidor. Node también permite instalar programas como Tailwind y Bootstrap to facil. Usando GIT podemos hacer en la carpeta del proyecto un npm install bootstrap@latest. Esto te instala la última versión de bootstrap. Cuando instalas esto se crea una carpeta de node_modules y se crea un package json con las dependencias de las versiones instaladas. Si lo descargamos a la hora de linkear los archivos de bootstrap del css o js siempre linkear la versión .min 
      
-    Atajo de teclado seleccionar una cosa y darle a cntl D para selecionar otras líneas con el mismo nombre-->
+    Atajo de teclado seleccionar una cosa y darle a cntrl D para selecionar otras líneas con el mismo nombre-->
 </body>
 </html>

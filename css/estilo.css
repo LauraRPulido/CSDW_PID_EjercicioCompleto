@@ -1,0 +1,19 @@
+/* RESET PERSONALIZADO */
+li,ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* IMAGE FLUID ES IGUAL QUE ESTO */
+img{
+    max-width: 100%;
+}
+
+:root{
+
+}
