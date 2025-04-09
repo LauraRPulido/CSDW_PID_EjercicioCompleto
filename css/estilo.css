@@ -1,4 +1,4 @@
-/* RESET PERSONALIZADO */
+/* RESET PERSONALIZADO  */
 li,ul{
 
     list-style: none;
@@ -7,7 +7,7 @@ li,ul{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none; 
 }
 /* IMAGE FLUID ES IGUAL QUE ESTO */
 img{
@@ -20,15 +20,18 @@ img{
     --turquesa: #0092d1;
     --blanco: white;
     --negro: black;
+    --grisClaro: #cbcbcb;
 
 }
 
 body{
     font-family: "Roboto";
+    color: var(--grisOscuro);
 }
 
 h1,h2,h3,h4,h5,h6,a.navbar-brand{
     font-family: "Roboto Slab";
+    font-weight: 700;
 }
 
 header#header{
@@ -53,5 +56,206 @@ header#header{
     a.active{
         color: var(--turquesa );
     }
+/* Pues sí que está guapo eso de machacar las clases de bootstrap para el navbar Hemos cambiado el icono porque el de bootstrap era una imagen guarrona*/
+    .navbar-toggler{
+        
+        border: none;
+        color: var(--turquesa);
+        
+    }
     
 }
+
+section#banner{
+
+    min-height: 75vh;
+    background: url("../img/fondoCabecera.jpg") no-repeat center center / cover;
+    text-align: center;
+    align-content: center;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    a{
+        background-color: var(--turquesa);
+        color: var(--blanco);
+        /* Si pones padding 15 y quieres hacer redondo el border. En el border radius hay que poner el doble del padding. por ejemplo 15-30 */
+        border-radius: 30px;
+        padding: 15px 30px;
+        display: inline-block;
+        transition:background-color 1s;
+    }
+
+}
+
+main#index{
+
+    section#bienvenida{
+
+        min-height: 70vh;
+        align-content: center;
+        text-align: center;
+        border-bottom: solid 1px var(--grisClaro);
+
+        p{
+            margin: 30px 0 ;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        /* Importante de como hacer cosas diferentes en responsive de movil  */
+        .row > div {
+            @media screen and (max-width:767px)  {
+
+                border-bottom: solid 2px var(--turquesa);
+                padding: 50px 0;
+
+                &:last-child{
+                    border-bottom: none;
+                }
+                
+            }
+
+        }
+        /* Otra manera. PARA EXCLUIR CHILDS */
+        /* .row > div:not(:last-child) {
+            @media screen and (max-width:767px)  {
+
+                border-bottom: solid 2px var(--turquesa);
+                padding: 50px 0;
+                
+            }
+
+        } */
+    }
+
+    section#cursos{
+        min-height: 100vh;
+        align-content: center;
+
+        .card{
+            margin-bottom: 50px;
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            h4{
+                font-size: 1rem;
+                color: var(--grisOscuro);
+            }
+
+            .descripcion{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span+span{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-family: "Roboto Slab";
+                    color: var(--turquesa)
+                }
+            }
+   
+        }
+
+        .row :last-child{
+            text-align: center;
+            a{
+                background-color: var(--turquesa);
+                color: var(--blanco);
+                padding: 15px 30px;
+                border-radius: 30px;
+                transition: background-color 1s;
+                &:hover{
+                    background-color: var(--grisOscuro);
+                }
+
+            }
+        }
+
+    }
+
+    section#noticias{
+        min-height: 100vh;
+        align-content: center;
+
+        article{
+
+            img{
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            
+            
+            .info{
+
+                display: flex;
+                gap: 20px;
+                align-items: start;
+
+                
+
+                > time{
+
+                    font-family: "Roboto Slab";
+                    line-height: 120%;
+                    font-weight: bold;
+                    box-shadow: 0 0 10px rgba(0, 0, 0,.2);
+                    padding: 10px;
+                    
+                    span{
+                        color: var(--turquesa);
+                        font-size: 1.5rem;
+
+                    }
+
+                    span:last-child{
+
+                        font-size: 1rem;
+                        font-weight: 500;
+                        
+                    }
+
+
+                }
+
+                .contenido{
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                    time{
+                        color: var(--grisClaro);
+                    }
+
+                    p{
+                        font-size: 1rem;
+                        /* TEXT-ALIGN CENTER */
+                        /* -webkit-text-size-adjust: 100%  El webkit es para si la función está en experimentación o ya no soporta o mierdas así Usar Can I use o instalar la extensión; */
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+}
+/* FINAL DEL MAIN */
+
+/* PARA EL FOOTER VAMOS A HACERLO CON PHP Y EL HEADER TAMBIÉN HAY QUE CAMBIARLO. HABRÍA QUE CAMBIAR EL INDEX A EXTENSIÓN PHP.
+
+PONIENDO : <?php include_once("header.php")?> y ya después el código html
+
+*/

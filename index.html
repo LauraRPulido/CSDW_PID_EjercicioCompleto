@@ -54,7 +54,8 @@
                 <div class="container">
                   <a class="navbar-brand" href="#">E-<span>Web</span></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+
                   </button>
                   <div class="collapse navbar-collapse" id="menu">
                     <!-- ESTO PARA PONER EL MENU PARA EL OTRO LADO -->
@@ -133,7 +134,8 @@
 
         <section id="cursos">
             <div class="container">
-                <div class="row">
+                <!-- UNICA VEZ QUE USAMOS LAS CLASES DE BOOTSTRAP YA QUE ESTA ROW TIENE OTRAS NECESIDADES DE CSS -->
+                <div class="row text-center my-5">
                     <div class="col-md-8 mx-auto">
                         <h2>Cursos Online</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia corporis dolorem modi! Est esse, ratione vitae excepturi incidunt, voluptates eveniet officia nemo necessitatibus inventore maxime minus sequi recusandae debitis tempora.</p>
@@ -146,7 +148,7 @@
                         <div class="card">
                             <img src="./img/curso1.jpg" alt="">
                             <div class="card-body">
-                                <h3>Ritulo</h3>
+                                <h3>Html5 & CSS</h3>
                                 <h4>Redu</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
                                 <hr>
@@ -162,8 +164,8 @@
                         <div class="card">
                             <img src="./img/curso2.jpg" alt="">
                             <div class="card-body">
-                                <h3>Ritulo</h3>
-                                <h4>Redu</h4>
+                                <h3>PHP y MySql</h3>
+                                <h4>Fran</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
                                 <hr>
                                 <div class="descripcion">
@@ -178,8 +180,8 @@
                         <div class="card">
                             <img src="./img/curso3.jpg" alt="">
                             <div class="card-body">
-                                <h3>Ritulo</h3>
-                                <h4>Redu</h4>
+                                <h3>UI / UX</h3>
+                                <h4>Esperanza</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur in doloremque repellat voluptate soluta amet illum sequi harum architecto magnam fugit, incidunt est expedita cumque iure commodi temporibus doloribus?</p>
                                 <hr>
                                 <div class="descripcion">
@@ -202,7 +204,8 @@
 
         <section id="noticias">
             <div class="container">
-                <div class="row">
+                <!-- AQUI IGUAL PORQUE ASÍ NO AFECTAMOS A LAS TARJETAS -->
+                <div class="row text-center my-5">
                     <div class="col-md-8 mx-auto">
                         <h2>Noticias</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit nemo corrupti facilis exercitationem quisquam cumque architecto nulla, laborum velit explicabo dolores voluptatibus corporis dicta incidunt? In repellendus minus obcaecati.</p>
@@ -219,7 +222,8 @@
                             </time>
                             <div class="contenido">
                                 <h4>Titulo Noticia</h4>
-                                <time datetime="">15:30-19:30</time>
+                                <time datetime=""><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    15:30-19:30</time>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
 
                             </div>
@@ -234,7 +238,8 @@
                             </time>
                             <div class="contenido">
                                 <h4>Titulo Noticia</h4>
-                                <time datetime="">15:30-19:30</time>
+                                <time datetime=""><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    15:30-19:30</time>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
 
                             </div>
@@ -249,7 +254,8 @@
                             </time>
                             <div class="contenido">
                                 <h4>Titulo Noticia</h4>
-                                <time datetime="">15:30-19:30</time>
+                                <time datetime=""><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    15:30-19:30</time>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat cumque minima harum officia, sit commodi excepturi accusamus aliquid labore aliquam illo voluptates cupiditate quos ut deleniti vero, nemo suscipit?</p>
 
                             </div>
@@ -257,8 +263,8 @@
                     </article>
 
                 </div>
-
-                <div class="row">
+                <!-- AQUI TAMBIÉN HEMOS PUESTO LAS CLASES A BOOTSTRAP -->
+                <div class="row my-5 text-end">
                     <div class="col">
                         <a href="">Suscribirse</a>
                     </div>
